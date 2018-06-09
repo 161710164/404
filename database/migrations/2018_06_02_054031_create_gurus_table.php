@@ -18,7 +18,6 @@ class CreateGurusTable extends Migration
             $table->string('nama_guru');
             $table->integer('nip')->unique();
             $table->string('jabatan');
-            $table->string('foto');
             $table->timestamps();
         });
     }

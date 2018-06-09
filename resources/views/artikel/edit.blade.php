@@ -28,7 +28,7 @@
 
 			  		<div class="form-group {{ $errors->has('judul') ? ' has-error' : '' }}">
 			  			<label class="control-label">Judul</label>	
-			  			<input type="text" value="{{ $artikels->judul }}" name="judul" class="form-control"  required>
+			  			<input type="text" name="judul" class="form-control" value="{{ $artikels->judul }}"  required>
 			  			@if ($errors->has('judul'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('judul') }}</strong>
@@ -36,9 +36,10 @@
                         @endif
 			  		</div>
 			  		
+					  
 			  		<div class="form-group {{ $errors->has('konten') ? ' has-error' : '' }}">
 			  			<label class="control-label">Konten</label>	
-			  			<input type="text" value="{{ $artikels->konten }}" name="konten" class="form-control"  required>
+			  			<input type="text" name="konten" class="form-control" value="{{ $artikels->konten }}"  required>
 			  			@if ($errors->has('konten'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('konten') }}</strong>

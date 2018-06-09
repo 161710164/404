@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Kategori;
@@ -51,7 +50,7 @@ class KategoriController extends Controller
      * @param  \App\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function show(Kategori $kategori)
+    public function show(Kategori $id)
     {
         $kategoris = Kategori::findOrFail($id);
         return view('kategori.show',compact('kategoris'));
@@ -63,7 +62,7 @@ class KategoriController extends Controller
      * @param  \App\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kategori $kategori)
+    public function edit(Kategori $id)
     {
         $kategoris = Kategori::findOrFail($id);
         return view('kategori.edit',compact('kategoris'));
@@ -76,7 +75,7 @@ class KategoriController extends Controller
      * @param  \App\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kategori $kategori)
+    public function update(Request $request, $id)
     {
         $this->validate($request,[
             'nama_kategori' => 'required|'
@@ -93,7 +92,7 @@ class KategoriController extends Controller
      * @param  \App\Kategori  $kategori
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kategori $kategori)
+    public function destroy(Kategori $id)
     {
         $kategoris = Kategori::findOrFail($id);
         $kategoris->delete();

@@ -45,7 +45,7 @@ class EkskulController extends Controller
             'nama_ekskul' => 'required|',
             'guru_id' => 'required|',
             'fasilitas_id' => 'required',
-            'jadwal' => 'required'
+            'jadwal' => 'required|integer'
         ]);
         $ekskuls = new Ekskul;
         $ekskuls->nama_ekskul = $request->nama_ekskul;

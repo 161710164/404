@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>405</title>
+    <title>404</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -240,11 +240,11 @@
             <div class="cloud x5"></div>
         </div>
         <div class='c'>
-            <div class='_404'>405</div>
+            <div class='_404'>403</div>
             <hr>
-            <div class='_1'>Eror Mang</div>
-            <div class='_2'>Benerkeun Heula</div>
-            <a class='btn' href='#'>Balik ka Imah</a>
+            <div class='_1'>Ciluk BA!!</div>
+            <div class='_2'>Neangan Naon Mang</div>
+            <a class='btn' href="{{ url()->previous() }}">Balik Ka Imah</a>
         </div>
 </body>
 </html>

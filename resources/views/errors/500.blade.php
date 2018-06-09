@@ -240,7 +240,7 @@
             <div class="cloud x5"></div>
         </div>
         <div class='c'>
-            <div class='_404'>404</div>
+            <div class='_404'>403</div>
             <hr>
             <div class='_1'>Ciluk BA!!</div>
             <div class='_2'>Neangan Naon Mang</div>

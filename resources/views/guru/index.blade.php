@@ -17,7 +17,6 @@
 					  <th>Nama Guru</th>
 					  <th>nip</th>
 					  <th>Jabatan</th>
-						<th>Foto</th>
 					  <th colspan="3">Action</th>
 			  		</tr>
 				  	</thead>
@@ -30,8 +29,6 @@
 				    	<td>{{ $data->nama_guru }}</td>
 				    	<td>{{ $data->nip }}</td>
 				    	<td>{{ $data->jabatan }}</td>
-				    	<td>{{ $data->foto }}</td>
-
 <td>
 	<a class="btn btn-warning" href="{{ route('guru.edit',$data->id) }}">Edit</a>
 </td>

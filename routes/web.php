@@ -35,4 +35,3 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth', 'role:admin']],function 
     Route::resource('guru','GuruController');
     Route::resource('kategori','KategoriController');
 });
-
